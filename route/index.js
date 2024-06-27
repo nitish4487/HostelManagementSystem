@@ -20,14 +20,17 @@ if (typeof localStorage === "undefined" || localStorage === null) {
 }
 
 
-//connection
-var db1 = mongoose.connection;
-db1.on('error', console.error.bind(console, 'connection error:'));
-db1.once('open', function () {
-    // we're connected!
-});
+// connection
+// var db1 = mongoose.connection;
+// db1.on('error', console.error.bind(console, 'connection error:'));
+// db1.once('open', function () {
+//     // we're connected!
+// });
 
-
+// MongoDB connection
+mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+    .then(() => console.log('MongoDB connected successfully'))
+    .catch(err => console.error('MongoDB connection error:', err));
 
 
 // get point
