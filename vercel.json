@@ -2,16 +2,11 @@
   "version": 2,
   "builds": [
     {
-      "src": "app.js",
+      "src": "/app.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
-    { "src": "/static/(.*)", "dest": "/static/$1" },
-    { "src": "/(.*)", "dest": "/app.js" }
-  ],
-  "env": {
-    "MONGODB_URI": "mongodb+srv://nitish448711:Nitish@31159@cluster0.dzgmclv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
-    "PORT": "8000"
-  }
+    { "src": "/(.*)", "dest": "/" }
+  ]
 }
