@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    title title
+    block style
+     style
+     include ../static/style.css
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+  body
+    div#logo
+     img(src="/static/4.png")
+    div.logoheader
+     | JSS ACADEMY OF TECHNICAL EDUCATION
+    section  
+     div.bgcol
+      ul.navb 
+       li #[a(href="/home " class="nav") Home]
+       li #[a(href="/about" class="nav") About]
+       li #[a(href="/hmlogin" class="nav") Hostel manager]
+    div.dropdown
+     input(type="button", class="dropbtn" value="options")
+     div.dropdown-content
+      | #[a(href="/logout") Logout]
+    block content
+    block foot
+    div#footer
+     | © hostel management system(2020) | All Rights Reserved

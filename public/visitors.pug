@@ -1,0 +1,26 @@
+extends base1.pug
+block style
+ style
+  include ../static/stylestulogin.css
+  include ../static/hmdash.css
+
+block content
+ div.signup
+    h2 Add visitors
+    form(action= "/hmlogin/profile/visitors" ,method= "post", onsubmit="return validation()" ,class= "myform")
+     <input type="text"class= "form" name="usn" placeholder="Enter student usn" id="form1">
+     span#usn.hmform
+     <input type="text" class= "form" name="vid" placeholder="visitors id" id="form2">
+     span#vid.hmform
+     <input type="text" class= "form" name="vname" placeholder="visitors name" id="form3">
+     span#vname.hmform
+     <input type="date" class="form" name="dateofarr" placeholder="Date of arrival" id="form4">
+     span#dateofarr.hmform
+     <input type="time" class="form" name="intime" placeholder="reporting time" id="form5">
+     span#intime.hmform
+     <input type="date" class="form" name="dateofdepart" placeholder="Date of depart" id="form6">
+     span#dateofdepart.hmform
+     <input type="time" class="form" name="outtime" placeholder="departure time" id="form6">
+     span#outtime.hmform
+     div.btn
+      input(type="submit", value="submit")

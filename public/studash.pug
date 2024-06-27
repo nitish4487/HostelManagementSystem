@@ -1,0 +1,26 @@
+extends base2.pug
+block style
+ style
+  include ../static/stylestulogin.css
+  include ../static/hmdash.css
+  include ../static/stylestulogin.css
+  include ../static/studash.css
+block content
+ div.signup 
+  img(src="/static/13.png", alt="student logo")
+  h1 Personal Info
+  each records in list 
+   div
+    p.u1 USN:#{records.usn}
+    p.u1 Name:#{records.name}
+    p.u1 Email:#{records.email}
+    p.u1 Mobile_No:#{records.mobileno}
+    p.u2 Dept_Name:#{records.deptname}
+    p.u2 YearOfStudy:#{records.yearofstudy}
+ div.signup
+   each records in list 
+    img(src="/static/15.png", alt="hostel logo")
+    h1 Hostel Info
+    p.u1 hostelid:#{records.htid}
+    p.u1 roomid:#{records.roomid}
+ 

@@ -1,0 +1,35 @@
+extends base1.pug
+block style
+ style
+  include ../static/stylestulogin.css
+  include ../static/hmdash.css
+
+block content
+ div.search
+  form(action= "/search" ,method= "post")
+   <input type="text" name="search" placeholder="Search by USN" class="search1">
+    input(type="submit", value="submit")
+ div.container
+  table#dashboard
+   thead
+    tr
+     th USN  
+     th NAME
+     th DEPT
+     th Email
+     th YEAROFSTUDY
+     th MOBILENO
+     th HTid
+     th roomid
+   tbody
+   each list in records
+    tr
+     td #{list.usn}
+     td #{list.name}
+     td #{list.deptname}
+     td #{list.email}
+     td #{list.yearofstudy}
+     td #{list.mobileno}
+     td #{list.htid}
+     td #{list.roomid}
+ 

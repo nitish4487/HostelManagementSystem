@@ -1,0 +1,111 @@
+body{
+    background-image: url("/static/6.jpg") ;
+    background-position:100% auto;
+    background-size:cover ;
+    background-repeat:repeat ;
+    background-attachment:local;
+    width:100%;
+    height:100%; 
+   
+}
+.myform{
+    display: flex;
+    flex-direction: column;
+    /* border:2px solid rgb(32, 29, 29); */
+    margin:auto;
+    width:706px;
+}
+.form{
+    width: 573px;
+    margin: 15px auto;
+    padding: 14px 13px;
+    border:2px solid rgb(0, 255, 255);
+    border-radius: 34px;
+    font-weight: 700;
+    font-size: larger;
+    text-align: center;
+}
+.signup{
+width: 680px;
+height:fit-content;
+margin:auto;
+margin-top: 55px;
+margin-bottom:33px;
+border:2px solid rgb(0, 255, 255);
+border-radius: 34px;
+background-color: rgba(39, 189, 216, 0.2);
+
+
+}
+.signup h1{
+    text-align: center;
+    font-size: 38px;
+
+    color:red;
+}
+.signup h3{
+    text-align: center;
+    font-size: 24px;
+    font-family: bold;
+
+    color:rgb(17, 16, 16)
+}
+h3{
+    animation-name:head;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes head{
+    0% {color:black;}
+    25% {color:white;}
+    50% {color:rgb(16, 209, 235);}
+    100% {color:rgb(228, 22, 22);}
+}
+.signup h4{
+    text-align: center;
+    font-size: 16px;
+
+    color:rgb(234, 243, 243);
+}.btn{
+    width: 135px;
+    margin: 15px auto;
+    /* padding: 14px 13px;
+    border:2px solid rgb(0, 255, 255);
+    border-radius: 34px;
+    font-weight: 700; */
+}
+input{
+    width: 135px;
+    margin: 15px auto;
+    padding: 14px 13px;
+    border:2px solid rgb(0, 255, 255);
+    border-radius: 34px;
+    font-weight: 500;
+    font-size: 25px;
+    
+}
+.hyp{
+    /* border:2px solid rgb(0, 0, 0); */
+    text-align: center; 
+    position: relative;
+    right: 7px;
+    top: -8px;
+}
+.hyp1{
+    /* border:2px solid rgb(0, 0, 0); */
+    color:red;
+    font-size: 34px;
+    text-decoration: none;
+
+   
+}
+input{
+    outline: none;
+}
+.form9 ,.hmform{
+    text-align: center;
+    color:red;
+    font-size: larger;
+
+}

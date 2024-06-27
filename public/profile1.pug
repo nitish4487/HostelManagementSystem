@@ -1,0 +1,14 @@
+extends base1.pug
+block style
+ style
+  include ../static/stylestulogin.css
+  include ../static/hmdash.css
+block content
+ div.signup
+  img(src="/static/13.png", alt="student logo")
+  h1 Personal Info
+  each records in list
+   p.u1 name:#{records.name}
+   p.u1 username:#{records.username}
+   p.u1 email:#{records.email}
+   p.u1 mobileno:#{records.mobileno}

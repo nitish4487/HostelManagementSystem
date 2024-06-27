@@ -1,0 +1,35 @@
+extends base1.pug
+block style
+ style
+  include ../static/stylestulogin.css
+  include ../static/hmdash.css
+
+block content
+ div.search
+  form(action= "/vsearch" ,method= "post")
+   <input type="text" name="search" placeholder="Search by USN" class="search1">
+    input(type="submit", value="submit")
+ div.container
+ table#dashboard
+   tr
+    th USN
+    th VISITOR_ID
+    th NAME
+    th DATE_OF_ARR
+    th IN_TIME
+    th DATE_OF_DEPART
+    th OUT_TIME
+    th G_ID
+    th ROOMid
+   tbody
+   each list in records
+    tr
+     td #{list.usn}
+     td #{list.vid}
+     td #{list.vname}
+     td #{list.dateofarr}
+     td #{list.intime}
+     td #{list.dateofdepart}
+     td #{list.outime}
+     td #{list.gid}
+     td #{list.roomid}

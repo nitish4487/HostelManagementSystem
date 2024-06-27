@@ -1,0 +1,14 @@
+extends base.pug
+block style
+ style
+  include ../static/style.css
+  include ../static/stylehome.css
+  include ../static/stylestulogin.css
+block content
+ div.signup
+    h1 Student login Here
+    form(action= "/dashboard" ,method="post", class= "myform")
+     <input type="text"class= "form" name="usn" placeholder="Enter your USN">
+     <input type="password"class= "form" name="password" placeholder="Enter your password">
+     div.btn
+      input(type="submit", value="submit")

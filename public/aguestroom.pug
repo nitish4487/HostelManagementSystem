@@ -1,0 +1,17 @@
+extends base1.pug
+block style
+ style
+  include ../static/stylestulogin.css
+  include ../static/hmdash.css
+  
+block content
+ div.signup
+    h2 Allocate Guest room
+    form(action= "/aguestroom" ,method= "post", onsubmit="return validation()" ,class= "myform")
+     <input type="text"class= "form" name="usn" placeholder="Enter student usn" id="form1">
+     span#usn.hmform
+     p Allocating for:&nbsp;&nbsp;&nbsp;Guest<input type="checkbox"name="hostelid" value="G" checked>
+     <input type="Number" class= "form" name="roomid" placeholder="Enter room id" id="form3">
+     span#vname.hmform
+     div.btn
+      input(type="submit", value="submit")

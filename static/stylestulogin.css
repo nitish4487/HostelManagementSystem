@@ -1,0 +1,13 @@
+body{
+    background-image: url("/static/6.jpg") ;
+    background-position:100% auto;
+    background-size:cover ;
+    background-repeat:repeat ;
+    background-attachment:local;
+    width:100%;
+    height:100%; 
+   
+    
+    
+   
+}

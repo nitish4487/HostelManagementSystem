@@ -1,0 +1,26 @@
+extends base.pug
+block scripts
+ script(src="/static/hmsignup.js")
+block style
+ style
+  include ../static/style.css
+  include ../static/stylehome.css
+  include ../static/hmsignup.css
+block content
+ div.signup
+    h1 Hostel Manager Signup Here
+    form(action= "/hmsignup" ,method= "post", onsubmit="return validation()" ,class= "myform")
+     <input type="text"class= "form" name="name" placeholder="Enter your name" id="form1">
+     span#name.hmform
+     <input type="text" class= "form" name="username" placeholder="choose username" id="form2">
+     span#username.hmform
+     <input type="email" class= "form" name="email" placeholder="Enter your Email.." id="form3">
+     span#email.hmform
+     <input type="number" class="form" name="mobileno" placeholder="Enter your mobile no" id="form4">
+     span#mobileno.hmform
+     <input type="password" class="form" name="password" placeholder="choose Password" id="form5">
+     span#password.hmform
+     <input type="password" class="form" name="cpassword" placeholder="confirm" id="form6">
+     span#cpassword.hmform
+     div.btn
+      input(type="submit", value="submit")

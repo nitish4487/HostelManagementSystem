@@ -1,0 +1,16 @@
+extends base.pug
+block style
+ style
+  include ../static/style.css
+  include ../static/stylehome.css
+  include ../static/stylestulogin.css
+block content
+ div.signup
+  h1 Hostel-Manager/Admin Login
+  form(action= "/hmlogin/profile" ,method= "post", class= "myform")
+   <input type="text"class= "form" name="username" placeholder="Enter your Username">
+   <input type="password"class= "form" name="password" placeholder="Enter your password">
+   div.btn
+    input(type="submit", value="submit")
+   div.hyp 
+    |  #[a(href="/hmsignup"  class="hyp1") /signup]   
