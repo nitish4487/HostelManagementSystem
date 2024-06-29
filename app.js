@@ -16,7 +16,7 @@ var session = require('express-session');
 //     saveUninitialized: true
 // }));
 app.use(express.static('public'));
-app.use("/",router);
+app.use("/home",router);
 // app.use("/",router1);
 app.use(bodyparser.urlencoded({ extended: true }));
 
