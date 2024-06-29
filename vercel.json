@@ -1,21 +1,21 @@
 {
   "version": 2,
   "builds": [
-    { "src": "route/index.js", "use": "@vercel/node" },
-    { "src": "public/**/*.pug", "use": "@vercel/static" },
-    { "src": "static/**/*", "use": "@vercel/static" }
-  ],
-  "routes": [
     {
-      "src": "/static/(.*)",
-      "dest": "/static/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/app.js"
+      "src": "app.js",
+      "use": "@vercel/node"
     }
   ],
-  "buildCommand": "node app.js",
+  "rewrites": [
+    {
+      "source": "/static/(.*)",
+      "destination": "/static/$1"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/app.js"
+    }
+  ],
   "cleanUrls": true,
   "framework": null,
   "installCommand": "npm install",
