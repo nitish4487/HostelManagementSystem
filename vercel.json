@@ -1,13 +1,22 @@
 {
   "version": 2,
   "builds": [
-    {
-      "src": "app.js",
-      "use": "@vercel/node"
-    }
+    { "src": "route/index.js", "use": "@vercel/node" },
+    { "src": "public/**/*.pug", "use": "@vercel/static" },
+    { "src": "static/**/*", "use": "@vercel/static" }
   ],
   "routes": [
-    { "src": "/static/(.*)", "dest": "/static/$1" },
-    { "src": "/(.*)", "dest": "/app.js" }
-  ]
+    {
+      "src": "/static/(.*)",
+      "dest": "/static/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/app.js"
+    }
+  ],
+  "buildCommand": "node app.js",
+  "cleanUrls": true,
+  "framework": null,
+  "installCommand": "npm install",
 }
