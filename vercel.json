@@ -5,7 +5,5 @@
     { "src": "public/**/*.pug", "use": "@vercel/static" },
     { "src": "static/**/*", "use": "@vercel/static" }
   ],
-  "cleanUrls": true,
-  "framework": "null",
   "installCommand": "npm install"
 }
