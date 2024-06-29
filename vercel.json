@@ -17,6 +17,6 @@
     }
   ],
   "cleanUrls": true,
-  "framework": null,
+  "framework": "null",
   "installCommand": "npm install",
 }
