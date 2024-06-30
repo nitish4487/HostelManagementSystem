@@ -6,11 +6,10 @@
     { "src": "static/**/*", "use": "@vercel/static" }
   ],
   "rewrites": [
-    { "source": "/static/(.*)", "destination": "/static/$1" },
     { "source": "/(.*)", "destination": "/route/index.js" }
   ],
   "buildCommand": "node app.js",
   "cleanUrls": true,
-  "framework": "other",
   "installCommand": "npm install"
 }
+
