@@ -9,5 +9,6 @@
   ],
   "buildCommand": "node app.js",
   "cleanUrls": true,
+  "installCommand": "npm install"
 }
 
