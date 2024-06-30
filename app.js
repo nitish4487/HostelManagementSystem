@@ -19,10 +19,6 @@ app.use(express.static('public'));
 app.use("/",router);
 // app.use("/",router1);
 app.use(bodyparser.urlencoded({ extended: true }));
-
-app.get('/', (req, res) => {
-    res.status(200).render('home.pug');
-});
 // express specific stuff
 app.use('/static', express.static('static'))// For serving static files
 
