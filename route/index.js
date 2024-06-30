@@ -34,10 +34,7 @@ mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTop
 
 
 // get point
-router.get('/', (req, res) => {
 
-    res.status(200).render('home.pug');
-})
 router.get('/contactus', (req, res) => {
 
     res.status(200).render('contactus.pug')
