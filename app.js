@@ -30,6 +30,11 @@ app.use('/static', express.static('static'))// For serving static files
 app.set('view engine', 'pug')// Set the template engine as pug
 app.set('views', path.join(__dirname, 'public'))// Set the views directory
 
+
+app.use((err, req, res, next) => {
+    console.error(err.stack);
+    res.status(500).send('Something broke!');
+});
 //port at which itt listen our req
 app.listen(port, () => {
     console.log(`The application started successfully on port ${port}`);
