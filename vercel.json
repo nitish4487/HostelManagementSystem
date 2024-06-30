@@ -1,8 +1,7 @@
 {
   "version": 2,
   "builds": [
-    { "src": "route/index.js", "use": "@vercel/node" },
-    { "src": "public/**/*.pug", "use": "@vercel/static" },
+    { "src": "app.js", "use": "@vercel/node" },
     { "src": "static/**/*", "use": "@vercel/static" }
   ],
   "rewrites": [
@@ -10,6 +9,5 @@
   ],
   "buildCommand": "node app.js",
   "cleanUrls": true,
-  "installCommand": "npm install"
 }
 
