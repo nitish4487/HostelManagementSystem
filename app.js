@@ -1,8 +1,10 @@
+require('dotenv').config();
+
 var express = require("express");
 const path = require("path");
 var app = express();
-const port = process.env.PORT || 8000;
-var router =require("./route/index.js");
+const port = process.env.PORT ;
+var router =require("./route/index") 
 // var router1 =require("./route/admin.js");
 var bodyparser = require("body-parser");
 var session = require('express-session');
