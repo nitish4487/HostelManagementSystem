@@ -1,18 +1,10 @@
 {
   "version": 2,
   "builds": [
-    { "src": "app.js", "use": "@vercel/node" },
-    { "src": "public/*.pug", "use": "@vercel/static" },
-    { "src": "static/**/*", "use": "@vercel/static" }
+   { "src": "app.js", "use": "@vercel/node" }
   ],
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/app.js"
-    }
-  ],
-  "cleanUrls": true,
-  "installCommand": "npm install"
+   "rewrites":
+    [{ "source": "/(.*)",
+     "destination": "app.js" }] 
+   
 }
-
-
