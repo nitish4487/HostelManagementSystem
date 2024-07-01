@@ -23,7 +23,7 @@ app.use(bodyparser.urlencoded({ extended: true }));
 app.use('/static', express.static('static'))// For serving static files
 
 app.get('/hello', (req, res) => {
-    res.send('Hello, world!');
+    res.send('Hello, world! haaaaaaaaaaaaaaaaaaaaaaaaaa');
 });
 //pug specific stuff
 app.set('view engine', 'pug')// Set the template engine as pug
