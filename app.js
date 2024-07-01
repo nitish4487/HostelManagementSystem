@@ -3,7 +3,7 @@ require('dotenv').config();
 var express = require("express");
 const path = require("path");
 var app = express();
-const port = process.env.PORT ;
+const port = process.env.PORT || 8000 ;
 var router =require("./route/index") 
 // var router1 =require("./route/admin.js");
 var bodyparser = require("body-parser");
@@ -26,7 +26,7 @@ app.use('/static', express.static('static'))// For serving static files
 
 app.get('/hello', (req, res) => {
     res.send('Hello, world! haaaaaaaaaaaaaaaaaaaaaaaaaa');
-});
+}); 
 app.get('/home', (req, res) => {
     res.status(200).render('home.pug');
 });
