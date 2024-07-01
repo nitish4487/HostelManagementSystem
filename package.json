@@ -23,11 +23,5 @@
     "node-localstorage": "^2.1.6",
     "parser": "^0.1.4",
     "pug": "^3.0.0"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.22"
-  },
-  "engines": {
-    "node": "^20.15.0"
   }
 }
