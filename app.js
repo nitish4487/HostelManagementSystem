@@ -25,6 +25,9 @@ app.use('/static', express.static('static'))// For serving static files
 app.get('/hello', (req, res) => {
     res.send('Hello, world! haaaaaaaaaaaaaaaaaaaaaaaaaa');
 });
+app.get('/home', (req, res) => {
+    res.status(200).render('home.pug');
+});
 //pug specific stuff
 app.set('view engine', 'pug')// Set the template engine as pug
 app.set('views', path.join(__dirname, 'public'))// Set the views directory

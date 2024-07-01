@@ -2,7 +2,8 @@ require('dotenv').config();
 var mongoose = require("mongoose");
 
 // giving connection to mongoose
-MONGODB_URI="mongodb+srv://nitish448711:Nitish@31159@cluster0.dzgmclv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+// MONGODB_URI="mongodb+srv://nitish448711:Nitish@31159@cluster0.dzgmclv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+MONGODB_URI="mongodb+srv://nitish448711:Nitish@31159@cluster0.dzgmclv.mongodb.net/test?retryWrites=true&w=majority&appName=Cluster0";
 console.log('MONGODB_URI:', process.env.MONGODB_URI);
 
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true ,useCreateIndex: true}).then(() => {
